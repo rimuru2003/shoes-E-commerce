@@ -11,7 +11,7 @@ const Hero = () => {
   const { title, subtitle, btntext, img, sociallinks, videos } = heroapi;
   
   const handleLoginClick = () => {
-    router.push('/page/login')  };
+    router.push('/login')  };
 
   return (
     <div className="relative h-auto w-auto flex flex-col">
