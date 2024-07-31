@@ -38,8 +38,7 @@ const Item = ({
   return (
     <>
       <div
-        className={`relative bg-gradient-to-b ${color} ${shadow} grid items-center ${ifExists ? "justify-items-start" : "justify-items-center"
-          } rounded-xl py-5 px-5 transition-all duration-700 ease-in-out w-full hover:scale-105`}
+        className={`relative bg-gradient-to-b ${color} ${shadow} grid items-center rounded-xl py-5 px-5 transition-all duration-700 ease-in-out w-full hover:scale-105`}
       >
         <div
           className={`grid items-center ${ifExists ? "justify-items-start" : "justify-items-center"
@@ -66,7 +65,7 @@ const Item = ({
                 className="bg-white/90 blur-effect-theme button-theme p-0.5 ml-4 shadow shadow-sky-200"
                 onClick={() => onAddToCart()}
               >
-                <ShoppingBagIcon className="icon-style text-slate-900" />
+                <ShoppingBagIcon className="icon-style text-slate-800" />
               </button>
             </div>
           </div>
