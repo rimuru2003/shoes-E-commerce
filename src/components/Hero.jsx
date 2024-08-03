@@ -26,7 +26,7 @@ const Hero = () => {
             type="button"
             className="button-theme bg-slate-200 shadow-slate-200 rounded-xl my-8 "
           >
-            {btntext}
+            { btntext}
           </button>
           <div className="grid items-center gap-5 md:gap-3 absolute top-[33vh] lg:top-[27vh] left-[11%] xl:left-0 w-auto h-auto">
             {videos?.map((val, i) => (

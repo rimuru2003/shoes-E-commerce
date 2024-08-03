@@ -15,7 +15,7 @@ const Home = () => {
         <FlexContent endpoint={highlight} ifExists />
         <Sales endpoint={toprateslaes} ifExists={false} />
         <FlexContent endpoint={sneaker} ifExists={false} />
-        {/* <Stories story={story} /> */}
+        <Stories story={story} />
       </main>
       <Footer footerAPI={footerAPI} />
     </div>
