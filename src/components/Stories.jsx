@@ -1,14 +1,13 @@
-"use client"
+"use client";
 
-import React from "react"
-import { HashtagIcon, HeartIcon } from "@heroicons/react/24/solid"
-import { ClockIcon } from "@heroicons/react/24/outline"
-import Title from "./utils/Title"
-import { truncate } from "lodash"
-import Slider from "react-slick"
-import "slick-carousel/slick/slick.css"
-import "slick-carousel/slick/slick-theme.css"
-import Image from "next/image"
+import React from "react";
+import { HashtagIcon, HeartIcon } from "@heroicons/react/24/solid";
+import { ClockIcon } from "@heroicons/react/24/outline";
+import Title from "./utils/Title";
+import { truncate } from "lodash";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const Stories = ({ story: { title, news } }) => {
   const settings = {
@@ -62,8 +61,8 @@ const Stories = ({ story: { title, news } }) => {
         },
       },
     ],
-  }
-
+  };
+ 
   return (
     <div className="nike-container mb-11">
       <Title title={title} />
@@ -73,8 +72,7 @@ const Stories = ({ story: { title, news } }) => {
             <div key={i} className="mb-3 slider-item">
               <div className="relative grid items-center gap-4 pb-2 rounded-lg shadow shadow-slate-200 ring-1 ring-slate-200">
                 <div className="flex items-center justify-center">
-                  <Image
-                    fill
+                  <img
                     src={val.img}
                     alt={`img/story/${i}`}
                     className="w-full h-auto object-cover shadow-md shadow-slate-200 rounded-tl-lg rounded-tr-lg"
@@ -120,7 +118,7 @@ const Stories = ({ story: { title, news } }) => {
         </Slider>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Stories
+export default Stories;
